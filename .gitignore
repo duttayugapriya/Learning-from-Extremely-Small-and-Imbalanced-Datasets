@@ -1,0 +1,57 @@
+# .gitignore for extremely-small-imbalanced-learning
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (store separately / in DVC)
+*.csv
+*.parquet
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+data/raw/
+data/processed/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Results (large outputs — store in a separate results branch or DVC)
+results/figures/*.png
+results/figures/*.pdf
