@@ -2,6 +2,7 @@
 
 # Python
 __pycache__/
+*.pyc
 *.py[cod]
 *.pyo
 *.pyd
@@ -22,6 +23,7 @@ lib64/
 # Virtual environments
 .env
 .venv
+.venv/
 env/
 venv/
 ENV/
@@ -31,7 +33,6 @@ ENV/
 *.ipynb_checkpoints
 
 # Data files (store separately / in DVC)
-*.csv
 *.parquet
 *.pkl
 *.pickle
@@ -39,6 +40,11 @@ ENV/
 *.hdf5
 data/raw/
 data/processed/
+
+# Ignore general data CSVs but track curated experiment result tables
+*.csv
+!results/**/*.csv
+!results/*.csv
 
 # OS
 .DS_Store
