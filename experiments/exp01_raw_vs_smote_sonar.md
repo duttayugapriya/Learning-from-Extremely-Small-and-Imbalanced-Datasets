@@ -77,7 +77,7 @@ To investigate how classical, Bayesian, and tabular foundation models behave und
 - **Single Dataset & Artificial Imbalance:** Findings are currently limited to one high-dimensional dataset (`p = 60`) with synthetic imbalance rather than naturally skewed multi-domain benchmarks.
 
 ## Next Steps
-- **Uncertainty Quantification (Experiment 02):** Implement fold-safe Cross-Conformal Prediction to test whether distribution-free prediction sets can protect minority-class coverage despite high ECE.
+- **Uncertainty Quantification ([Experiment 02](./exp02_cross_conformal_sonar.md)):** Implement fold-safe Cross-Conformal Prediction to test whether distribution-free prediction sets can protect minority-class coverage despite high ECE.
 - **Multi-Dataset Scaling (Experiment 03):** Scale the pipeline across 5 naturally imbalanced OpenML benchmarks (`blood-transfusion`, `kc1`, `climate-crashes`, `pc1`, `ozone-8hr`) with larger frozen test sets and compare Marginal vs. Mondrian (class-conditional) conformal calibration.
 
 ---
